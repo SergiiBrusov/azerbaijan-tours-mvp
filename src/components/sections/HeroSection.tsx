@@ -46,12 +46,18 @@ export default function HeroSection() {
           </p>
         </div>
 
-        {/* VISUAL */}
-        <div className="flex items-center justify-center">
-          <div className="w-full max-w-md aspect-video bg-white rounded-3xl shadow-lg flex items-center justify-center text-slate-400">
-            Video / Image
-          </div>
-        </div>
+        <div className="flex items-center justify-center mt-6 md:mt-0">
+  <video
+    className="w-full max-w-2xl aspect-video rounded-3xl shadow-lg object-cover"
+    controls
+    autoPlay
+    loop
+    muted
+  >
+    <source src="/videos/hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
       </div>
     </section>
   );
